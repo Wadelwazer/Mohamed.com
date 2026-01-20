@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Abass | Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <span class="logo-text">MA</span>
+            <span class="logo-subtitle">Data Analyst</span>
+          </div>
+          <div class="nav-links">
+            <a href="#about" class="nav-link" data-i18n="nav.about">About</a>
+            <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+            <a href="#experience" class="nav-link" data-i18n="nav.experience"
+              >Experience</a
+            >
+            <a href="#education" class="nav-link" data-i18n="nav.education"
+              >Education</a
+            >
+            <a href="#contact" class="nav-link" data-i18n="nav.contact"
+              >Contact</a
+            >
+          </div>
+          <div class="nav-controls">
+            <button id="languageToggle" class="language-btn">العربية</button>
+            <a
+              href="mailto:mohamedabassahmed51@gmail.com"
+              class="cta-button"
+              data-i18n="nav.getInTouch"
+              >Get in Touch</a
+            >
+          </div>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-nav-link" data-i18n="nav.about">About</a>
+      <a href="#skills" class="mobile-nav-link" data-i18n="nav.skills"
+        >Skills</a
+      >
+      <a href="#experience" class="mobile-nav-link" data-i18n="nav.experience"
+        >Experience</a
+      >
+      <a href="#education" class="mobile-nav-link" data-i18n="nav.education"
+        >Education</a
+      >
+      <a href="#contact" class="mobile-nav-link" data-i18n="nav.contact"
+        >Contact</a
+      >
+      <a
+        href="mailto:mohamedabassahmed51@gmail.com"
+        class="cta-button"
+        data-i18n="nav.getInTouch"
+        >Get in Touch</a
+      >
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="welcome-badge" data-i18n="hero.welcome">
+              Welcome to my portfolio
+            </div>
+            <h1 class="hero-title" data-i18n="hero.title">
+              Hi, I'm Mohamed Abass
+            </h1>
+            <p class="hero-description" data-i18n="hero.description">
+              A passionate Data Analyst specializing in transforming complex
+              business data into actionable insights. With expertise in SQL,
+              Power BI, and Excel, I help organizations make data-driven
+              decisions through interactive dashboards and comprehensive
+              reporting.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1"
+                >Get in Touch →</a
+              >
+              <a
+                href="mailto:mohamedabassahmed51@gmail.com"
+                class="btn btn-secondary"
+                data-i18n="hero.cta2"
+                >↓ Download CV</a
+              >
+            </div>
+          </div>
+          <div class="hero-visual">
+            <canvas id="analyticsCanvas"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <svg
+          class="scroll-icon"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 14l-7 7m0 0l-7-7m7 7V3"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title" data-i18n="skills.title">
+          Skills & Expertise
+        </h2>
+        <p class="section-subtitle" data-i18n="skills.subtitle">
+          A comprehensive toolkit of technical and analytical skills developed
+          through professional experience and continuous learning.
+        </p>
+
+        <div class="skills-grid">
+          <!-- Data Management -->
+          <div class="skill-card">
+            <div class="skill-icon">💾</div>
+            <h3
+              class="skill-title"
+              data-i18n="skills.categories.dataManagement"
+            >
+              Data Management
+            </h3>
+            <div class="skill-tags">
+              <span class="tag" data-i18n="skills.tags.sqlServer"
+                >SQL Server</span
+              >
+              <span class="tag" data-i18n="skills.tags.advancedSQL"
+                >Advanced SQL Queries</span
+              >
+              <span class="tag" data-i18n="skills.tags.dataCleaning"
+                >Data Cleaning</span
+              >
+              <span class="tag" data-i18n="skills.tags.etl">ETL Processes</span>
+              <span class="tag" data-i18n="skills.tags.access"
+                >Microsoft Access</span
+              >
+            </div>
+          </div>
+
+          <!-- Visualization & BI -->
+          <div class="skill-card">
+            <div class="skill-icon">📊</div>
+            <h3 class="skill-title" data-i18n="skills.categories.visualization">
+              Visualization & BI
+            </h3>
+            <div class="skill-tags">
+              <span class="tag" data-i18n="skills.tags.powerBI">Power BI</span>
+              <span class="tag" data-i18n="skills.tags.tableau">Tableau</span>
+              <span class="tag" data-i18n="skills.tags.excelDashboards"
+                >Excel Dashboards</span
+              >
+              <span class="tag" data-i18n="skills.tags.dataViz"
+                >Data Visualization</span
+              >
+              <span class="tag" data-i18n="skills.tags.bi"
+                >Business Intelligence</span
+              >
+            </div>
+          </div>
+
+          <!-- Analysis & Reporting -->
+          <div class="skill-card">
+            <div class="skill-icon">📈</div>
+            <h3 class="skill-title" data-i18n="skills.categories.analysis">
+              Analysis & Reporting
+            </h3>
+            <div class="skill-tags">
+              <span class="tag" data-i18n="skills.tags.dataModeling"
+                >Data Modeling</span
+              >
+              <span class="tag" data-i18n="skills.tags.reporting"
+                >Report Generation</span
+              >
+              <span class="tag" data-i18n="skills.tags.dataAnalysis"
+                >Data Analysis</span
+              >
+              <span class="tag" data-i18n="skills.tags.processImprovement"
+                >Process Improvement</span
+              >
+              <span class="tag" data-i18n="skills.tags.strategicPlanning"
+                >Strategic Planning</span
+              >
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <h3 class="skill-title" data-i18n="skills.categories.technical">
+              Technical Skills
+            </h3>
+            <div class="skill-tags">
+              <span class="tag" data-i18n="skills.tags.ssis">SSIS</span>
+              <span class="tag" data-i18n="skills.tags.dataWarehousing"
+                >Data Warehousing</span
+              >
+              <span class="tag" data-i18n="skills.tags.java">Java (OOP)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="languages-section">
+          <h3 class="languages-title" data-i18n="skills.languages">
+            Languages
+          </h3>
+          <div class="languages-grid">
+            <div class="language-item">
+              <p class="language-name" data-i18n="skills.arabic">Arabic</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+              <p class="language-level" data-i18n="skills.nativeSpeaker">
+                Native Speaker
+              </p>
+            </div>
+            <div class="language-item">
+              <p class="language-name" data-i18n="skills.english">English</p>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%"></div>
+              </div>
+              <p class="language-level" data-i18n="skills.professional">
+                Professional
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+      <div class="container">
+        <h2 class="section-title" data-i18n="experience.title">
+          Professional Experience
+        </h2>
+        <p class="section-subtitle" data-i18n="experience.subtitle">
+          A track record of delivering data-driven solutions and fostering
+          analytical excellence across organizations.
+        </p>
+
+        <div class="timeline">
+          <!-- Experience 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">💼</div>
+            <div class="timeline-content">
+              <h3 class="experience-title" data-i18n="experience.job1.title">
+                Data Analyst
+              </h3>
+              <p class="experience-company" data-i18n="experience.job1.company">
+                University of Gezira, Wad Madani
+              </p>
+              <p class="experience-date" data-i18n="experience.job1.period">
+                2021 - 2023
+              </p>
+              <ul class="experience-list">
+                <li data-i18n="experience.job1.description.0">
+                  Designed and implemented data warehouse solutions combining
+                  SQL Server and Power BI for research and administrative
+                  projects.
+                </li>
+                <li data-i18n="experience.job1.description.1">
+                  Conducted data cleaning, validation, and integration from
+                  multiple sources to support analytical projects.
+                </li>
+                <li data-i18n="experience.job1.description.2">
+                  Created reports and dashboards to track research metrics,
+                  resource allocation, and project outcomes.
+                </li>
+                <li data-i18n="experience.job1.description.3">
+                  Collaborated with faculty to provide insights for process
+                  improvement and strategic planning.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker">👨‍🏫</div>
+            <div class="timeline-content">
+              <h3 class="experience-title" data-i18n="experience.job2.title">
+                Collaborating Teacher
+              </h3>
+              <p class="experience-company" data-i18n="experience.job2.company">
+                University of Gezira, Wad Madani
+              </p>
+              <p class="experience-date" data-i18n="experience.job2.period">
+                2021 - 2022
+              </p>
+              <ul class="experience-list">
+                <li data-i18n="experience.job2.description.0">
+                  Taught computer and database fundamentals, including MS Access
+                  and SQL Server.
+                </li>
+                <li data-i18n="experience.job2.description.1">
+                  Delivered courses on Data Warehouses, Power BI, and advanced
+                  database concepts.
+                </li>
+                <li data-i18n="experience.job2.description.2">
+                  Guided students in programming using Java (OOP, Cryptography,
+                  Network Security).
+                </li>
+                <li data-i18n="experience.job2.description.3">
+                  Assisted in practical projects integrating SQL Server with
+                  Power BI for data analysis purposes.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <div class="container">
+        <div class="education-grid">
+          <!-- Education Column -->
+          <div class="education-column">
+            <h2 class="section-title">Education</h2>
+            <div class="education-list">
+              <div class="education-item">
+                <h3 class="education-degree">Master in Computer Sciences</h3>
+                <p class="education-institution">
+                  University of Gezira, Wad Madani
+                </p>
+                <div class="education-meta">
+                  <span class="education-year">2022 - Present</span>
+                  <span class="education-status in-progress">In Progress</span>
+                </div>
+              </div>
+
+              <div class="education-item">
+                <h3 class="education-degree">Bachelor in Computer Sciences</h3>
+                <p class="education-institution">
+                  University of Gezira, Wad Madani
+                </p>
+                <div class="education-meta">
+                  <span class="education-year">2016 - 2021</span>
+                  <span class="education-status completed">Completed</span>
+                </div>
+              </div>
+
+              <div class="education-item">
+                <h3 class="education-degree">Diploma in Computer Sciences</h3>
+                <p class="education-institution">
+                  University of Gezira, Wad Madani
+                </p>
+                <div class="education-meta">
+                  <span class="education-year">2011 - 2014</span>
+                  <span class="education-status completed">Completed</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certifications Column -->
+          <div class="education-column">
+            <h2 class="section-title">Certifications</h2>
+            <div class="education-list">
+              <div class="education-item cert-item">
+                <h3 class="education-degree">
+                  Practical Data Analysis Package
+                </h3>
+                <p class="education-institution">Afrotech Center</p>
+                <p class="education-year">Dec 2025</p>
+              </div>
+
+              <div class="education-item cert-item">
+                <h3 class="education-degree">Microsoft Power BI Training</h3>
+                <p class="education-institution">
+                  International Professional Training Academy
+                </p>
+                <p class="education-year">2025</p>
+              </div>
+
+              <div class="education-item cert-item">
+                <h3 class="education-degree">Free Excel Course</h3>
+                <p class="education-institution">Excel Masters Center</p>
+                <p class="education-year">Dec 2025</p>
+              </div>
+
+              <div class="education-item cert-item">
+                <h3 class="education-degree">Free Power BI Course</h3>
+                <p class="education-institution">Excel Masters Center</p>
+                <p class="education-year">Dec 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">
+          I'm always interested in hearing about new projects and opportunities.
+          Feel free to reach out!
+        </p>
+
+        <div class="contact-grid">
+          <a href="mailto:mohamedabassahmed51@gmail.com" class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Email</h3>
+            <p>mohamedabassahmed51@gmail.com</p>
+          </a>
+
+          <a href="tel:+966543885069" class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>Phone</h3>
+            <p>+966 543 885 069</p>
+          </a>
+
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Location</h3>
+            <p>Al Riyadh, Saudi Arabia</p>
+          </div>
+        </div>
+
+        <div class="contact-buttons">
+          <a href="mailto:mohamedabassahmed51@gmail.com" class="btn btn-primary"
+            >Send Email</a
+          >
+          <a
+            href="https://www.linkedin.com/in/mohamed-abass-092b44164"
+            target="_blank"
+            class="btn btn-secondary"
+            >Visit LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Mohamed Abass</h3>
+            <p>
+              A passionate Data Analyst dedicated to transforming complex data
+              into actionable insights.
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/mohamed-abass-092b44164"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li><a href="mailto:mohamedabassahmed51@gmail.com">Email</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Made with ❤️ by Mohamed Abass</p>
+          <p>&copy; 2025 Mohamed Abass. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
